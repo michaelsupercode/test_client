@@ -1,0 +1,170 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+nav {
+    max-width: 100%;
+    background-color: rgb(236, 224, 183);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+}
+
+.nav-menu-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.login-button,
+.logout-button,
+.add-product-button,
+.new-variation-button {
+    color: white;
+    background-color: rgb(84, 84, 134);
+    border: none;
+    border-radius: 6px;
+    padding: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: large;
+}
+
+.logout-button {
+    background-color: grey;
+}
+
+.product-grid-view {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    padding: 32px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.product-view {
+    border: 5px solid cornsilk;
+    padding: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.product-view img {
+    max-width: 60%;
+}
+
+.product-is-limited {
+    color: red;
+}
+
+.product-variations {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.product-detail-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.product-detail-box img {
+    width: 100%;
+}
+
+.product-variations .variation {
+    list-style: none;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+form {
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    padding: 8px;
+    font-size: larger;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+.error-message,
+.success-message {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid red;
+    color: white;
+    font-size: medium;
+    font-weight: 600;
+    background-color: salmon;
+}
+
+.success-message {
+    border: 1px solid green;
+    background-color: forestgreen;
+}
+
+.product-variations-display li {
+    list-style: none;
+    margin: 8px;
+    border-radius: 6px;
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.product-variations-display span {
+    line-height: 2;
+}
+
+.product-variations-display button {
+    margin: 8px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
