@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import { disableReactDevTools } from ‘@fvilers/disable-react-devtools’;;
+import { disableReactDevTools } from '@fvilers/disable-react-devtools';
 import './App.css';
 import Navigation from './components/Navigation';
 import AddProductPage from './Pages/AddProductPage';
