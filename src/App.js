@@ -10,6 +10,10 @@ import ProductDetailPage from './Pages/ProductDetailPage';
 import RegistrationPage from './Pages/RegistrationPage';
 import WishlistPage from './Pages/WishlistPage';
 
+
+if (process.env.NODE_ENV === 'production') disableReactDevTools ()
+
+
 function App() {
   const [token, setToken] = useState(null)
   const logout = () => setToken(null)
