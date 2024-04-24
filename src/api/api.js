@@ -1,1 +1,1 @@
-export const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:7077"
+export const apiUrl = process.env.REACT_APP_API_URL || "https://test-servershop.onrender.com"
